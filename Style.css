@@ -1,0 +1,152 @@
+body {
+    background-color: #ffffff; /* Fundo azul bem clarinho */
+    font-family: Arial, sans-serif; /* Fonte utilizada */
+    color: #333; /* Cor do texto */
+    padding: 20px; /* Espaçamento interno */
+}
+
+h1.centered {
+    font-size: 40px; /* Tamanho do título */
+    margin-bottom: 20px; /* Margem inferior */
+    color: #ffffff; /* Cor do texto para contraste */
+    text-align: center; /* Centraliza o título */
+    padding: 25px; /* Espaçamento interno na caixa */
+    background-color: #333; /* Fundo cinza escuro */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+h1.guaxinim-title {
+    font-size: 40px; /* Tamanho do título */
+    margin-bottom: 20px; /* Margem inferior */
+    color: #ffffff; /* Cor do texto para contraste */
+    text-align: center; /* Centraliza o título */
+    padding: 10px; /* Reduzido para 10px para diminuir a altura da caixa */
+    background-color: #333; /* Fundo cinza escuro */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+
+
+.birthday-container {
+    display: flex; /* Usa flexbox para alinhar o conteúdo */
+    margin-bottom: 20px; /* Espaçamento abaixo da seção */
+}
+
+.birthday-message {
+    margin-left: 20px; /* Espaçamento à esquerda do texto */
+    display: flex;
+    flex-direction: column; /* Coloca os parágrafos em coluna */
+}
+
+p {
+    font-size: 50px; /* Aumenta o tamanho da fonte */
+    color: #000; /* Torna a fonte preta */
+    margin-bottom: 10px; /* Margem inferior do parágrafo */
+    text-align: center; /* Centraliza o texto */
+    line-height: 1.5; /* Aumenta o espaçamento entre linhas */
+}
+
+
+.guaxinim-images {
+    display: flex; /* Usa flexbox para alinhar as imagens */
+    justify-content: center; /* Centraliza as imagens */
+    margin: 20px 0; /* Margem vertical */
+}
+
+.guaxinim-images img {
+    width: 200px; /* Largura das imagens dos guaxinins */
+    height: auto; /* Mantém a proporção */
+    margin: 0 15px; /* Espaçamento entre as imagens */
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Sombra das imagens */
+}
+
+.gallery {
+    display: flex; /* Usa flexbox para a galeria */
+    justify-content: flex-start; /* Alinha as imagens à esquerda */
+    overflow-x: auto; /* Adiciona rolagem horizontal se necessário */
+    padding: 10px 0; /* Espaçamento vertical */
+}
+
+.gallery img {
+    height: 200px; /* Altura fixa para as imagens */
+    margin: 0 10px; /* Espaçamento entre as imagens */
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Sombra das imagens */
+}
+
+hr {
+    margin: 40px 0; /* Margem da linha separadora */
+    border: 0; /* Remove a borda padrão */
+    border-top: 1px solid #00796b; /* Linha verde */
+}
+.centered-video {
+    display: block; /* Faz o iframe ser um bloco */
+    margin: 20px auto; /* Centraliza o vídeo com margens automáticas */
+}
+p {
+    font-size: 24px; /* Aumenta o tamanho da fonte */
+    color: #000; /* Torna a fonte preta */
+    margin-bottom: 10px; /* Margem inferior do parágrafo */
+}
+.gallery {
+    display: flex; /* Utiliza flexbox para alinhar as imagens em uma linha */
+    overflow-x: auto; /* Permite scroll horizontal */
+    padding: 20px; /* Aumenta o espaço ao redor da galeria */
+    border: 2px solid #333; /* Borda ao redor da galeria */
+    border-radius: 10px; /* Bordas arredondadas */
+    background-color: #f9f9f9; /* Fundo claro para a galeria */
+    max-width: 90%; /* Limita a largura da galeria para não ocupar toda a tela */
+    margin: 0 auto; /* Centraliza a galeria */
+}
+
+.gallery img {
+    max-width: 250px; /* Aumenta a largura máxima das imagens */
+    height: auto; /* Mantém a proporção das imagens */
+    margin-right: 15px; /* Espaço entre as imagens */
+    border-radius: 5px; /* Bordas arredondadas nas imagens */
+    transition: transform 0.2s; /* Adiciona efeito de transição */
+}
+
+
+.gallery img:hover {
+    transform: scale(1.1); /* Aumenta a imagem ao passar o mouse */
+}
+
+/* Estilos de scrollbar */
+.gallery::-webkit-scrollbar {
+    height: 8px; /* Altura da scrollbar */
+}
+
+.gallery::-webkit-scrollbar-track {
+    background: #eee; /* Cor do fundo da scrollbar */
+}
+
+.gallery::-webkit-scrollbar-thumb {
+    background: #333; /* Cor da parte que arrasta da scrollbar */
+    border-radius: 10px; /* Bordas arredondadas na parte que arrasta */
+}
+
+.gallery::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Cor da parte que arrasta quando em hover */
+}
+.white-box {
+    background-color: #fa8c8c; /* Cor de fundo branca */
+    padding: 15px; /* Espaçamento interno */
+    border: 2px solid #723333; /* Borda cinza clara */
+    border-radius: 10px; /* Bordas arredondadas */
+    margin: 20px auto; /* Margem superior e inferior, centralizado */
+    max-width: 650px; /* Limita a largura do quadrado */
+    max-height: 450px; /* Limita a largura do quadrado */
+    text-align: center; /* Centraliza o texto dentro do quadrado */
+}
+.rounded-box {
+    background: #333; /* Cor da parte que arrasta da scrollbar */
+    color: #ffffff; /* Texto branco para contraste */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    margin: 10px auto; /* Margem para centralizar e espaçar */
+    max-width: 900px; /* Limita a largura do parágrafo */
+    text-align: center; /* Centraliza o texto dentro do quadrado */
+
+}
+
