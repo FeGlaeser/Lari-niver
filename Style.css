@@ -149,4 +149,97 @@ p {
     text-align: center; /* Centraliza o texto dentro do quadrado */
 
 }
+body {
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 20px;
+}
+
+h1.centered, h1.guaxinim-title {
+    font-size: 2rem; /* Tamanho responsivo */
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    border-radius: 10px;
+}
+
+/* Ajuste do container de aniversário */
+.birthday-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.birthday-message {
+    margin-top: 20px; /* Alinhar o texto abaixo do iframe no mobile */
+    text-align: center;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #000;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+/* Responsividade para iframe de vídeos */
+iframe {
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+    border-radius: 12px;
+}
+
+/* Estilos da galeria de imagens */
+.gallery {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.gallery img {
+    max-width: 150px;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Media Queries para telas menores */
+@media (min-width: 768px) {
+    .birthday-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .gallery img {
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    h1.centered, h1.guaxinim-title {
+        font-size: 1.5rem; /* Reduz o tamanho do título */
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .gallery img {
+        max-width: 120px;
+    }
+}
 
