@@ -243,3 +243,53 @@ iframe {
     }
 }
 
+/* Responsividade para iframe de vídeos */
+iframe {
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+    aspect-ratio: 16 / 9; /* Mantém a proporção de 16:9 */
+    border-radius: 12px;
+}
+
+@media (min-width: 768px) {
+    iframe {
+        max-width: 1000px; /* Aumenta o tamanho do vídeo em telas maiores */
+        height: 562px; /* Aproximadamente 16:9 de proporção para vídeos maiores */
+    }
+}
+
+@media (max-width: 768px) {
+    iframe {
+        height: 450px; /* Ajuste de altura maior para dispositivos móveis */
+    }
+}
+
+/* Ajusta altura da playlist do Spotify */
+.spotify-playlist {
+    width: 100%;
+    height: 500px; /* Reduz a altura da playlist */
+    max-width: 450px; /* Define um limite de largura */
+}
+
+/* Responsividade para iframe de vídeos */
+iframe:not(.spotify-playlist) {
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+    aspect-ratio: 16 / 9; /* Mantém a proporção de 16:9 */
+    border-radius: 12px;
+}
+
+@media (min-width: 768px) {
+    iframe:not(.spotify-playlist) {
+        max-width: 1000px; /* Aumenta o tamanho do vídeo em telas maiores */
+        height: 562px; /* Aproximadamente 16:9 de proporção para vídeos maiores */
+    }
+}
+
+@media (max-width: 768px) {
+    iframe:not(.spotify-playlist) {
+        height: 450px; /* Ajuste de altura maior para dispositivos móveis */
+    }
+}
